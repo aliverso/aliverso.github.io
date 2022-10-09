@@ -1,21 +1,43 @@
+@import "reset.css";
 @import "https://fonts.googleapis.com/css?family=Poppins";
-
+:root {
+    --background-color: #fafafa;
+    --text-color: #212121;
+}
 body {
     font-family: 'Poppins', sans-serif;
-    color: #4a4a4a;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
-.navbar-item img {
-    max-height: none;
+.navbar {
+    padding: 2rem 2rem 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
 }
-.section, .navbar.is-spaced {
-    padding: 2.25rem;
+.navbar-right {
+    align-items: right;
+    display: flex;
+}
+.navbar-hamburger {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navbar-right {
+        display: none;
+    }
+    .navbar-hamburger {
+        display: block;
+    }
+}
+.navbar-link {
+    color: var(--text-color);
+    margin-left: 2rem;
+    align-self: flex-end;
+}
+.section {
+    padding: 1rem 2rem;
 }
 .subtitle {
-    color: #4a4a4a;
     font-size: 1.25rem;
-    font-weight: 400;
     line-height: 1.25;
 }

@@ -1,8 +1,14 @@
 @import "reset.css";
 @import "https://fonts.googleapis.com/css?family=Poppins";
 :root {
-    --background-color: #fafafa;
-    --text-color: #212121;
+    --background-color: #212121;
+    --text-color: #fafafa;   
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #fafafa;
+        --text-color: #212121;
+    }
 }
 body {
     font-family: 'Poppins', sans-serif;

@@ -1,29 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Aliverso: web, brand, graphic and illustration design based in Madrid</title>
+    <title>Aliverso: Design and art based in Madrid</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/icono-av.svg">
     <title>Aliverso</title>
 </head>
-<body>
+<script>
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+    }
+</script>
+<header>
+    <!--<div class="progress-bar-peek"></div>-->
+    <div class="wrap-progress-bar">
+        <div id="progressBar" class="progress-bar"></div>
+    </div>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-logo">
           <a href="#"><img src="assets/aliverso_logo.svg" alt="Aliverso" width="150"></a>
         </div>
-        <div class="navbar-right">
+      <!--  <div class="navbar-right">
             <a class="navbar-link" href="#">Proyectos</a>
             <a class="navbar-link" href="#">Contacto</a>
             <a class="navbar-link" href="#">Tema</a>
-        </div>
+        </div>-->
     </nav>
-    <section class="section">
+    <section class="under-construction">
         <p class="subtitle">
-            This page is <strong>under construction</strong>.
+            This page is <strong>under construction</strong>. Currently Ringo's appreciation web filled with lorem ipsums. Soon a designers portfolio.
             <br>Please, check back soon!
         </p>
     </section>
+</header>
+<body>
+     <!--<section class="wip section">
+        <div><p class="section-title">Work in progress</p></div>
+        <div class="wip-container">
+          <div class="story-container">
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-selfie.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-lengua.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-ventana.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-selfie.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-lengua.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-ventana.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-selfie.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-lengua.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-ventana.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-selfie.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-lengua.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <img src="assets/ringo-ventana.jpg" alt="">
+                </div>
+            </div>
+     </div>
+   </div>
+    </section>-->
+    <section class="work section">
+        <div><p class="section-title">Work and projects/ Case studies</p></div>
+        <div class="work-container">
+            <div class="work-card">
+                <div class="work-img">
+                    <img src="assets/ringo-selfie.jpg" alt="">
+                </div>
+                <div class="work-text">
+                    <h3>Work</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, vel aliquam nisl nisl sit amet nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, vel aliquam nisl nisl sit amet nisl.</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-img">
+                    <img src="assets/ringo-lengua.jpg" alt="">
+                </div>
+                <div class="work-text">
+                    <h3>Work</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, vel aliquam nisl nisl sit amet nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, vel aliquam nisl nisl sit amet nisl.</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-img">
+                    <img src="assets/ringo-ventana.jpg" alt="">
+                </div>
+                <div class="work-text">
+                    <h3>Work</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, vel aliquam nisl nisl sit amet nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, vel aliquam nisl nisl sit amet nisl.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about section">
+        <div><p class="section-title">About</p></div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="assets/ringo-selfie.jpg" alt="Profile pic">
+            </div>
+            <div class="about-text">
+                <p> Ringo VB is a black cat. He was born in the spanish pueblo of Jadraque the 23rd of May, 2015.<br>
+                    His belly is so big because he is full of pavito and lechuga. He identifies as a gay male cat. His favourite person ever is Ali VB, his mom and dad at the same time.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                <h3 style="text-align: center;">Handcoded by <a href="https://github.com/aliverso"  target="_blank">Ali VB <3</a></h3><!-- o codepen -->
+                <p style="text-align: center;">Special thanks to Code406 :)</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="footer-copyright">
+                <p> &copy; 2022-<script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
+            </div>
+    </footer>
 </body>
 </html>

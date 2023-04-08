@@ -81,7 +81,12 @@ body {
 }
 
  
-
+.hide-desktop{
+    display: none;
+}
+.hide-mobile{
+    display: block;
+}
 .title-section{
     font-size: 40px;
     line-height: 1;
@@ -300,11 +305,37 @@ footer{
  /**********SMALL SCREEN STYLES BELOW********/
  /*******************************************/
  @media screen and (max-width: 768px) {
+
+    .hide-desktop{
+        display: block;
+    }
+    .hide-mobile{
+        display: none;
+    }
     .navbar-right {
         display: none;
     }
     .navbar-hamburger {
         display: block;
+    }
+    .title-section{
+        font-size: 28px;
+        width: 97vw;
+        max-width:1920px;
+        margin: 4rem auto;
+    }
+    
+    .title {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+    
+    
+    .subtitle {
+        font-size: 1rem;
+        line-height: 1.25;
+        padding:2rem 0;
+        width: 50%;
     }
     .work-card{
         display: flex;

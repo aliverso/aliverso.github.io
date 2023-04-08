@@ -1,5 +1,5 @@
 @import "reset.css";
-@import "https://fonts.googleapis.com/css?family=Poppins";
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'";
 :root {
     --background-color: #060913;
     --text-color: #fafafa;   
@@ -48,10 +48,14 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 200;
     background-color: var(--background-color);
     color: var(--text-color);
 
     
+}
+.blurple {
+    color: var(--blurple);
 }
 .navbar {
     padding: 2rem 2rem 1.5rem 2rem;
@@ -75,9 +79,45 @@ body {
     padding: 1rem 2rem;
     text-align: left;
 }
-.subtitle {
+
+ 
+
+.title-section{
+    font-size: 40px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:10px ;    
+    width: 90vw;
+    max-width:1920px;
+    margin: 4rem auto;
+    text-align: center;
+    color: var(--text-color);
+    
+    
+}
+
+.title-section h1{
+    font-weight: 400;
+}
+
+/* Cursor */
+.typed-cursor {
+    color: var(--blurple);
+}
+
+.title {
     font-size: 1.25rem;
     line-height: 1.25;
+}
+
+
+.subtitle {
+    font-size: 1rem;
+    line-height: 1.25;
+    padding:2rem 0;
+    width: 50%;
 }
 
 .section{
@@ -88,8 +128,10 @@ body {
     max-width:1920px;
     margin: 5rem auto;
     color: var(--text-color);
-    background: linear-gradient(94.86deg, rgba(182, 184, 193, 0.5) -10.19%, rgba(121, 121, 121, 0.0809707) -1.7%, rgba(227, 231, 248, 0.104626) 3.66%, rgba(111, 112, 114, 0.277699) 31.36%, rgba(104, 104, 107, 0.440831) 45.2%, rgba(106, 107, 112, 0.317708) 59.05%, rgba(104, 105, 109, 0.403377) 72.9%, rgba(104, 105, 109, 0.403377) 93.67%, rgba(101, 102, 107, 0.0414402) 114.44%, rgba(108, 108, 111, 0.498624) 128.29%);
-    backdrop-filter: blur(6px);
+    /*background: linear-gradient(94.86deg, rgba(33, 58, 160, 0.2) -10.19%, rgba(130, 105, 189, 0.08) -1.7%, rgba(227, 231, 248, 0.104626) 3.66%, rgba(111, 112, 114, 0.277699) 31.36%, rgba(104, 104, 107, 0.440831) 45.2%, rgba(106, 107, 112, 0.317708) 59.05%, rgba(104, 105, 109, 0.403377) 72.9%, rgba(104, 105, 109, 0.403377) 93.67%, rgba(104, 119, 194, 0.02) 114.44%, rgba(121, 121, 202, 0.24) 128.29%);*/
+    background-color: #93a7ff11;
+     backdrop-filter: blur(6px);
+    
 }
 
 .section-title{
